@@ -9,10 +9,14 @@ class Experience extends Component {
         var data = experienceList.data;
 
         return (
-            <div className="experience">
+            <div className="othermain">
                 <h1>
                     experience.
                 </h1>
+
+                <p>
+                    click on each card for more information!
+                </p>
 
                 <div className="cards">
                     {data.map(item => (
