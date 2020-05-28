@@ -14,9 +14,9 @@ class Header extends Component {
                         iris.
                     </h1>
                 </div>
-                <Link to='/'>about me</Link>
-                <Link to="/experience">experience</Link>
-                <Link to="/projects">projects</Link>
+                <Link to="/irishu/">about me</Link>
+                <Link to="/irishu/experience">experience</Link>
+                <Link to="/irishu/projects">projects</Link>
             </nav>
         </header>
     );
