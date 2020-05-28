@@ -138,7 +138,8 @@ experience
 
 .card {
     width: 325px;
-    margin: 0 40px 30px 0;
+    height: 400px;
+    margin: 0 20px 20px 0;
     display: block;
     top: 0px;
     position: relative;
@@ -171,6 +172,23 @@ experience
     width: auto;
     display: block;
     margin: 20px auto;
+}
+
+.smallLogo {
+    height: 30px;
+    margin: 0 10px;
+}
+
+.experienceDet p {
+    margin: 0;
+}
+
+#contained-modal-title-vcenter {
+    font-size: 30px;
+}
+
+.details {
+    margin-top: 25px;
 }
 
 /*
