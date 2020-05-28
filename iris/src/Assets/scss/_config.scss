@@ -1,0 +1,45 @@
+/*
+Imports
+*/
+// Google fonts
+@import url(https://fonts.googleapis.com/css2?family=Baloo+Chettan+2:wght@400;500;600;700;800&display=swap);
+
+/*
+Vars
+*/
+
+$green: #a4ffb5;
+$black: #363636;
+$hoverblack: #696969;
+$baloo: 'Baloo Chettan 2', sans-serif;
+
+/*
+Mixins
+*/
+
+@mixin translateY($e) {
+    -webkit-transform: translateY($e);
+    -moz-transform: translateY($e);
+    transform: translateY($e);
+}
+
+@mixin transition($e) {
+    -webkit-transition: $e;
+    -moz-transition: $e;
+    transition: $e;
+}
+
+/*
+Fonts
+*/
+
+body {
+    font-family: $baloo;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+/*
+Style
+*/
+

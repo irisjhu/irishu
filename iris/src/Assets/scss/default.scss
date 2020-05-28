@@ -1,0 +1,132 @@
+@import '_config.scss';
+
+/*
+navigation
+*/
+
+.sidenav {
+    height: 100%; /* Full-height: remove this if you want "auto" height */
+    width: 220px; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: $green; /* Black */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 20px;
+
+    .heading {
+        padding: 36px 16px 86px 36px;
+
+        h1 {
+            font-size: 60px;
+        }
+
+        h1, h4 {
+            margin: 0;
+            padding: 0;
+        }
+    }
+
+    a {
+        padding: 6px 8px 6px 36px;
+        text-decoration: none;
+        font-size: 25px;
+        color: $black;
+        display: block;
+        @include transition(.2s ease-in-out);
+        
+        &:hover {
+            color: $hoverblack;
+            @include transition(.2s ease-in-out);
+        }
+    }
+}
+
+.main {
+    margin: 100px 0px 50px 220px;
+    padding: 0 10px;
+    position: absolute;
+}
+
+/*
+about me
+*/
+
+.headshot {
+    max-width: 70%;
+    border-radius: 50%;
+    display: block;
+    margin: auto auto 20px;
+}
+
+.split:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.left {
+    float: left;
+    width: 40%;
+}
+
+.right {
+    float: left;
+    width: 60%;
+}
+
+.aboutcontact {
+    margin-top: 40px;
+}
+
+.info {
+    text-align: center;
+    font-size: 25px;
+}
+
+.college {
+    font-weight: 800;
+}
+
+.nameTitle {
+    padding-bottom: 20px;
+}
+
+.contact {
+    margin: 30px 0px 0px 0px;
+
+    .links {
+        margin: 10px 0 0 0;
+    
+        img {
+            max-width: 40px;
+        }
+    }
+
+    a {
+        margin: 10px 15px 10px 0;
+    }
+
+    img {
+        max-width: 100%;
+    }
+
+    .right {
+        margin-top: 70px;
+    }
+}
+
+/*
+smaller screens
+*/
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+
+        a {
+            font-size: 18px;
+        }
+    }
+}
