@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import linkedin from '../../../resources/linkedin.png';
-import github from '../../../resources/github.png';
-import dbxgif from '../../../resources/dbxgif.gif';
+import linkedin from '../../../assets/files/linkedin.png';
+import github from '../../../assets/files/github.png';
+import dbxgif from '../../../assets/files/dbxgif.gif';
 
 class Contact extends Component {
     render() {

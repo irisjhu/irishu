@@ -118,9 +118,30 @@ about me
 }
 
 /*
+experience
+*/
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 300px;
+    margin: 30px;
+}
+
+.card-img-top {
+    width: 200px;
+    display: block;
+    margin: 20px auto;
+}
+
+/*
 smaller screens
 */
 
+// TODO: make it look pretty for small screens (hamburger menu, font sizes)
 @media screen and (max-height: 450px) {
     .sidenav {
         padding-top: 15px;

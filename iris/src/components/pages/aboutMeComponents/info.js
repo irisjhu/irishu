@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import headshot from '../../../resources/headshot.jpg';
+import headshot from '../../../assets/files/headshot.jpg';
 
 class Info extends Component {
     render() {

@@ -13,8 +13,8 @@ var changed = require('gulp-changed');
 // - SCSS/CSS
 ///////////////
 
-var SCSS_SRC = './src/Assets/scss/**/*.scss';
-var SCSS_DEST = './src/Assets/css';
+var SCSS_SRC = './src/assets/scss/*.scss';
+var SCSS_DEST = './src/assets/css';
 
 function compile_scss() {
     return src(SCSS_SRC)
