@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Link} from 'react-router-dom';
+import {NavLink} from 'react-router-dom';
 
 class Header extends Component {
   render () {
@@ -14,9 +14,9 @@ class Header extends Component {
                         iris.
                     </h1>
                 </div>
-                <Link to="/irishu/">about me</Link>
-                <Link to="/irishu/experience">experience</Link>
-                <Link to="/irishu/projects">projects</Link>
+                <NavLink exact={true} to="/irishu/" activeClassName="active">about me</NavLink>
+                <NavLink to="/irishu/experience" activeClassName="active">experience</NavLink>
+                <NavLink to="/irishu/projects" activeClassName="active">projects</NavLink>
             </nav>
         </header>
     );

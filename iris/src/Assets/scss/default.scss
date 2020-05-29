@@ -11,7 +11,7 @@ navigation
     z-index: 1; /* Stay on top */
     top: 0; /* Stay at the top */
     left: 0;
-    background-color: $green; /* Black */
+    // background-color: $green;
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 20px;
 
@@ -30,7 +30,8 @@ navigation
     }
 
     a {
-        padding: 6px 8px 6px 36px;
+        margin: 6px 40px 6px 36px;
+        padding: 0 5px;
         text-decoration: none;
         font-size: 25px;
         color: $black;
@@ -48,6 +49,10 @@ navigation
     margin: 100px 0px 50px 220px;
     padding: 0 10px;
     position: absolute;
+}
+
+.active {
+    background-color: $green;
 }
 
 /*
@@ -123,7 +128,7 @@ experience
 */
 
 .othermain {
-    margin: 0 30px 0;
+    margin: 0 30px 0 80px;
 
     a {
         text-decoration: none;
