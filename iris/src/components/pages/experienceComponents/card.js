@@ -19,9 +19,9 @@ class Card extends Component {
                     <div className="card-body">
                         <h4 className="card-title">{this.props.company}</h4>
                         <h5 className="card-subtitle mb-2 text-muted">{this.props.title}</h5>
-                        <p className="card-text">
-                            {this.props.start}
-                        </p>
+                    </div>
+                    <div className="corner">
+                        {this.props.start}
                     </div>
                 </a>
 
