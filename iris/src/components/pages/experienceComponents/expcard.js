@@ -63,8 +63,8 @@ class ExpCard extends Component {
                 </a>
 
                 <Popup
-                    modalTitle={ExpModalTitle(data)}
-                    modalBody={ExpModalBody(data)}
+                    modaltitle={ExpModalTitle(data)}
+                    modalbody={ExpModalBody(data)}
                     show={this.props.show}
                     onHide={this.props.onHide}>
                 </Popup>

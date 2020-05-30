@@ -22,11 +22,11 @@ class Popup extends Component {
             >
                 <Modal.Header closeButton>
                     <Modal.Title id="contained-modal-title-vcenter">
-                        {this.props.modalTitle}
+                        {this.props.modaltitle}
                     </Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
-                    {this.props.modalBody}
+                    {this.props.modalbody}
                 </Modal.Body>
             </Modal>
         );

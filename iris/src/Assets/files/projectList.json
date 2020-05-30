@@ -1,15 +1,29 @@
 {
     "data": [
+        
+        {
+            "title": "Truth Serum",
+            "where": "Dropbox Intern Hack Week",
+            "year": "2019",
+            "github": "https://github.com/irishu37/TruthSerum",
+            "images": [4, "/ts/ts", ".png"],
+            "description": [
+                "Fake news is sadly very prevalent in the era we live in; people even go so far as to create fake Twitter tweets from verified accounts. In order to combat this and provide a platform to keep a check on these fake news, we build a lightweight web app that is capable of distinguishing between real and fake images of Tweets.",
+                "We used Google's Vision API in order to parse text off of the images and then submitted to Twitter for validation. If the tweet was real, our web app would display the embedded tweet on the results page so that users could easily navigate directly to the real tweet.",
+                "But our app isn't perfect: it struggles with busy images that have text other than that in the tweet or text in other languages. In addition, since the Twitter API cost too much money for us to use, we settled on web scraping after submitting an advanced search query directly on Twitter.com. If we had more time and resources, we would definitely have worked to cover more edge cases and utilize the API to submit queries.",
+                "I collaborated with a design intern and a fellow engineering intern to create this minimum-viable product within a week."
+            ]
+        },
         {
             "title": "Cycles for Her Future",
             "where": "Technica",
             "year": "2017",
             "github": "https://github.com/irishu37/TechnicaGirlUpGame",
-            "images": ["/cfhf1.png", "/cfhf2.png", "/cfhf3.png", "/cfhf4.png", "/cfhf5.png", "/cfhf6.png"],
+            "images": [6, "/cfhf/cfhf", ".png"],
             "description": [
-                "This is a project developed during Technica (UMD's all-women and non-binary hackathon). We won the Best Education/Diversity and Inclusion Hack sponsored by Bloomberg.",
+                "I worked on this project with two other friends during my freshman year at Technica (UMD's all-women and non-binary hackathon). We won the Best Education/Diversity and Inclusion Hack sponsored by Bloomberg.",
                 "In high school my friends and I were introduced to Girl Up, a United Nations Foundation’s adolescent girls campaign that works to help underprivileged women and children in developing countries. As members, we wanted to promote one of its initiatives, School Cycle, which raises money to provide bikes to girls in Malawi and Guatemala to help them get to school!",
-                "This project is an interactive game which aims to educate the user on the hardships girls have to face in developing countries in order to receive an education. There are two states of the game - a walking state and a bicycle state. The different difficulty levels of both states serves to show the impact of one bicycle. When the user hits an obstacle a prompt pops up with a question related to education to help the user better understand the lives of the girls represented in the game."
+                "This project is an interactive game that aims to educate the user on the hardships girls have to face in developing countries in order to receive an education. There are two states of the game - a walking state and a bicycle state. The different difficulty levels of both states serves to show the impact of one bicycle. When the user hits an obstacle a prompt pops up with a question related to education to help the user better understand the lives of the girls represented in the game."
             ]
         }
     ]

@@ -36,15 +36,13 @@ function ProjImgCarousel(props) {
 }
 
 function ProjModalBody(props) {
-    const images = props.images.map(img => process.env.PUBLIC_URL + "/img" + img)
-    
     return (
         <div className="projBody">
-            {ProjImgCarousel({images: images})}
+            {ProjImgCarousel({ images: props.imagesF })}
 
             <div className="upperDetails">
                 <p>
-                    <b>where:</b> {props.where}
+                    <b>when:</b> {props.where}, {props.year}
                 </p>
                 <p>
                     <b>Github:</b> <a href={props.github} target="_blank" rel="noopener noreferrer">{props.github}</a>
@@ -66,10 +64,17 @@ class ProjCard extends Component {
     render() {
         var data = this.props.data;
 
+        var imagesF = []
+
+        // images stored in json as: [<number of imgs>, <img location>, <file type>]
+        for (var i = 1; i <= data.images[0]; i++) {
+            imagesF.push(process.env.PUBLIC_URL + "/img" + data.images[1] + i + data.images[2]);
+        }
+
         return (
             <div className="cardComponents">
                 <a className="card" href="javascript:void(0)" onClick={this.props.onClick}>
-                    <img className="card-img-top" src={process.env.PUBLIC_URL + "/img" + data.images[0]} alt="project pic" />
+                    <img className="card-img-top" src={imagesF[0]} alt="project pic" />
                     <div className="card-body">
                         <h4 className="card-title">{data.title}</h4>
                         <h5 className="card-subtitle mb-2 text-muted">{data.where}</h5>
@@ -81,8 +86,8 @@ class ProjCard extends Component {
 
                 <Popup
                     {...this.props}
-                    modalTitle={ProjModalTitle(data)}
-                    modalBody={ProjModalBody(data)}
+                    modaltitle={ProjModalTitle(data)}
+                    modalbody={ProjModalBody({...data, imagesF: imagesF})}
                     show={this.props.show}
                     onHide={this.props.onHide}>
                 </Popup>
