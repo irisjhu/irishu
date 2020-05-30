@@ -8,7 +8,7 @@ import {
 import Header from './components/headerComponent/header';
 import AboutMe from './components/pages/aboutMeComponents/aboutMe';
 import Experience from './components/pages/experienceComponents/experience';
-import Projects from './components/pages/projects';
+import Projects from './components/pages/projectsComponents/projects';
 
 // includes
 import './assets/css/default.min.css';

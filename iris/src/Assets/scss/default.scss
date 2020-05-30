@@ -1,4 +1,5 @@
 @import "_config.scss";
+// @import "~react-image-gallery/styles/scss/image-gallery.scss";
 
 /*
 navigation
@@ -149,8 +150,7 @@ experience
     top: 0px;
     position: relative;
     // background-color: #f2f8f9;
-    background-color: #f2f9f8;
-    // background-color: $lightgreen;
+    background-color: $lightgreen;
     border-radius: 4px;
     padding: 8px 6px;
     text-decoration: none;
@@ -191,7 +191,7 @@ experience
     top: 0;
     right: 0;
     // background-color: #00838d;
-    background-color: #1cc0aa;
+    background-color: $darkgreen;
     // background-color: #00ffdd;
     font-size: 15px;
     color: white;
@@ -203,7 +203,7 @@ experience
     margin: 0 10px;
 }
 
-.experienceDet p {
+.upperDetails p {
     margin: 0;
 }
 
@@ -213,6 +213,33 @@ experience
 
 .details {
     margin-top: 25px;
+}
+
+/*
+projects
+*/
+
+.carousel, .carousel-inner, .carousel-item, .carousel img {
+    height: 500px;
+    object-fit: contain;
+}
+
+.carousel-inner .active {
+    background-color: white !important;
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon {
+    background-color: $darkgreen;
+    background-size: 20px;
+    padding: 5px;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+}
+
+.carousel-indicators li {
+    background-color: $darkgreen;
+    opacity: .5;
 }
 
 /*

@@ -1,19 +1,19 @@
 import React, { Component } from 'react';
-import experienceList from '../../../assets/files/experienceList.json';
 
 // components
 import Card from '../common/card';
 
-import {EXP} from '../../vars';
+import projectList from '../../../assets/files/projectList.json';
+import { PROJ } from '../../vars';
 
-class Experience extends Component {
+class Projects extends Component {
     render() {
-        var data = experienceList.data;
+        var data = projectList.data;
 
         return (
             <div className="othermain">
                 <h1>
-                    experience.
+                    projects.
                 </h1>
 
                 <p>
@@ -23,7 +23,7 @@ class Experience extends Component {
                 <div className="cards">
                     {data.map(item => (
                         <Card
-                            cardType={EXP}
+                            cardType={PROJ}
                             data={item}
                         />
                     ))}
@@ -33,4 +33,4 @@ class Experience extends Component {
     }
 }
 
-export default Experience;
+export default Projects;

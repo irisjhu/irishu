@@ -1,0 +1,16 @@
+{
+    "data": [
+        {
+            "title": "Cycles for Her Future",
+            "where": "Technica",
+            "year": "2017",
+            "github": "https://github.com/irishu37/TechnicaGirlUpGame",
+            "images": ["/cfhf1.png", "/cfhf2.png", "/cfhf3.png", "/cfhf4.png", "/cfhf5.png", "/cfhf6.png"],
+            "description": [
+                "This is a project developed during Technica (UMD's all-women and non-binary hackathon). We won the Best Education/Diversity and Inclusion Hack sponsored by Bloomberg.",
+                "In high school my friends and I were introduced to Girl Up, a United Nations Foundation’s adolescent girls campaign that works to help underprivileged women and children in developing countries. As members, we wanted to promote one of its initiatives, School Cycle, which raises money to provide bikes to girls in Malawi and Guatemala to help them get to school!",
+                "This project is an interactive game which aims to educate the user on the hardships girls have to face in developing countries in order to receive an education. There are two states of the game - a walking state and a bicycle state. The different difficulty levels of both states serves to show the impact of one bicycle. When the user hits an obstacle a prompt pops up with a question related to education to help the user better understand the lives of the girls represented in the game."
+            ]
+        }
+    ]
+}
