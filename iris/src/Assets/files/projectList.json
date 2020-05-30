@@ -1,6 +1,17 @@
 {
     "data": [
-        
+        {
+            "title": "Student 2 Student",
+            "where": "CMSC434: Human-Computer Interaction",
+            "year": "2020",
+            "github": "https://github.com/josephlui8888/Prototype",
+            "images": [9, "/hci/hci", ".png"],
+            "description": [
+                "As part of the university course, CMSC434, I worked with four other friends to build this Android app. Through this project, we all did Android development for the first time. :)",
+                "The motivation behind this app idea was simple: we, as students, wanted a safe place to buy and sell things. Students currently use Craigslist, Reddit, Facebook Marketplace, or Facebook Groups to exchange goods and services, but none of them provide a dedicated platform just for students. Craigslist is shady and outdated, Reddit is not customized for buying and selling, Facebook Marketplace is too broad in reach, and Facebook Groups yield little to no success since nobody really checks them.",
+                "Our app is a way to provide that specialized-for-students platform. Users log in through their university's login portal to guarantee that everyone on the app are students. This way, students know they will be buying from or selling to another student (safer than Craigslist and Facebook Marketplace), and they can easily search and filter through existing posts (functionality not available on Reddit or Facebook Groups)."
+            ]
+        },
         {
             "title": "Truth Serum",
             "where": "Dropbox Intern Hack Week",

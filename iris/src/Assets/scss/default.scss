@@ -225,6 +225,11 @@ projects
     object-fit: contain;
 }
 
+.carousel img {
+    height: 450px;
+    object-fit: contain;
+}
+
 .carousel-inner .active {
     background-color: white !important;
 }

@@ -85,7 +85,6 @@ class ProjCard extends Component {
                 </a>
 
                 <Popup
-                    {...this.props}
                     modaltitle={ProjModalTitle(data)}
                     modalbody={ProjModalBody({...data, imagesF: imagesF})}
                     show={this.props.show}
