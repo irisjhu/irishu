@@ -61,9 +61,50 @@ smaller screens
     .main {
         margin-left: 150px;
     }
+
+    .othermain {
+        margin-left: 30px;
+    }
+
+    .card {
+        width: 220px;
+        height: 285px;
+        margin: 0 10px 10px 0;
+
+        .card-body {
+            padding: 10px;
+        }
+
+        .card-img-top {
+            max-height: 100px;
+            max-width: 230px;
+            display: block;
+            margin: 10px auto;
+        }
+
+        h4 {
+            font-size: 25px;
+        }
+
+        h5 {
+            font-size: 20px;
+        }
+    }
 }
 
 @media screen and (max-width: 700px) {
+    body {
+        font-size: 14px;
+
+        &.noScroll {
+            overflow: hidden;
+        }
+    }
+
+    .info {
+        font-size: 12px;
+    }
+
     .sidenav {
         padding-top: 10px;
         padding-bottom: 10px;
@@ -111,6 +152,23 @@ smaller screens
     .main {
         margin-left: 0;
         margin-top: 80px;
+        padding: 0 5px;
+
+        .left {
+            padding-left: 0;
+        }
+
+        .contact .right {
+            margin-top: 0;
+        }
+
+        .pageTitle {
+            font-size: 30px;
+        }
+    }
+
+    .othermain {
+        margin: 0 10px;
     }
 
     .menu {
@@ -125,7 +183,7 @@ smaller screens
         position: fixed;
         top: 0;
         left: 0;
-        transition: transform 0.3s ease-in-out;
+        transition: transform 0.2s ease-in-out;
         transform: translateX(-100%);
         z-index: 7;
 
@@ -156,6 +214,74 @@ smaller screens
             float: none;
             display: block;
             text-align: center;
+        }
+    }
+
+    .cards {
+        justify-content: center;
+    }
+
+    .card {
+        width: 190px;
+        height: 210px;
+        margin: 0 7px 7px 0;
+
+        .card-body {
+            padding: 10px;
+        }
+
+        .card-img-top {
+            max-height: 70px;
+            max-width: 180px;
+            display: block;
+            margin: 5px auto;
+        }
+
+        h4 {
+            font-size: 20px;
+        }
+
+        h5 {
+            font-size: 14px;
+        }
+
+        .corner {
+            font-size: 12px;
+            width: 55px;
+            height: 24px;
+        }
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .card {
+        width: 240px;
+        height: 180px;
+        margin: 0 7px 7px 0;
+
+        .card-body {
+            padding: 10px;
+        }
+
+        .card-img-top {
+            max-height: 70px;
+            max-width: 180px;
+            display: block;
+            margin: 5px auto;
+        }
+
+        h4 {
+            font-size: 20px;
+        }
+
+        h5 {
+            font-size: 14px;
+        }
+
+        .corner {
+            font-size: 12px;
+            width: 55px;
+            height: 24px;
         }
     }
 }

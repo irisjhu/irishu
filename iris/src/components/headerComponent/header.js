@@ -7,11 +7,13 @@ class Header extends Component {
         // Look for .hamburger
         var hamburger = document.querySelector(".hamburger");
         var nav = document.querySelector(".nav");
+        var body = document.querySelector("body");
         // On click
         hamburger.addEventListener("click", function () {
             // Toggle class "is-active"
             hamburger.classList.toggle("is-active");
             nav.classList.toggle("open");
+            body.classList.toggle("noScroll");
         });
     }
 

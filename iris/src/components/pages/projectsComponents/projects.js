@@ -12,7 +12,7 @@ class Projects extends Component {
 
         return (
             <div className="othermain">
-                <h1>
+                <h1 className="pageTitle">
                     projects.
                 </h1>
 
