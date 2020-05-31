@@ -1,0 +1,73 @@
+@import "_config.scss";
+
+/*
+about me
+*/
+
+.headshot {
+    max-width: 70%;
+    border-radius: 50%;
+    display: block;
+    margin: auto auto 20px;
+}
+
+.split:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.left {
+    float: left;
+    width: 40%;
+}
+
+.right {
+    float: left;
+    width: 60%;
+}
+
+.aboutcontact {
+    margin-top: 40px;
+}
+
+.info {
+    text-align: center;
+    font-size: 23px;
+
+    p {
+        margin: 5px 0 0 0;
+    }
+}
+
+.college {
+    font-style: italic;
+}
+
+.infolabel {
+    font-weight: 600;
+}
+
+.contact {
+    margin: 20px 0px 0px 0px;
+
+    .links {
+        margin: 10px 0 0 0;
+
+        img {
+            max-width: 40px;
+        }
+    }
+
+    a {
+        margin: 10px 15px 10px 0;
+    }
+
+    img {
+        max-width: 100%;
+    }
+
+    .right {
+        margin-top: 50px;
+    }
+}

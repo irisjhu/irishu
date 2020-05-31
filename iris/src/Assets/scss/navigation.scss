@@ -1,0 +1,50 @@
+@import "_config.scss";
+
+/*
+navigation
+*/
+
+.sidenav {
+    height: 100%; /* Full-height: remove this if you want "auto" height */
+    width: 220px; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    // background-color: $green;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 20px;
+
+    .nav {
+        margin: 0 40px 0 36px;
+    }
+
+    .heading {
+        margin: 36px 0 86px 0;
+        font-size: 28px;
+        line-height: 1;
+
+        .iris {
+            font-size: 60px;
+        }
+    }
+
+    a {
+        margin: 6px 0;
+        padding: 0 5px;
+        text-decoration: none;
+        font-size: 25px;
+        color: $black;
+        display: block;
+        @include transition(0.2s ease-in-out);
+
+        &:hover {
+            color: $hoverblack;
+            @include transition(0.2s ease-in-out);
+        }
+    }
+}
+
+header .active {
+    background-color: $green;
+}

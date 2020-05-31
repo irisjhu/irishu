@@ -1,0 +1,33 @@
+@import "_config.scss";
+
+/*
+projects
+*/
+
+.carousel, .carousel-inner, .carousel-item, .carousel img {
+    height: 500px;
+    object-fit: contain;
+}
+
+.carousel img {
+    height: 450px;
+    object-fit: contain;
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon {
+    background-color: $darkgreen;
+    background-size: 20px;
+    padding: 5px;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+}
+
+.carousel-indicators li {
+    background-color: $darkgreen;
+    opacity: .5;
+}
+
+.carousel-control-next, .carousel-control-prev {
+    width: 10%;
+}
