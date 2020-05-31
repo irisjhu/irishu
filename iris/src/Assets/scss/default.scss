@@ -52,7 +52,7 @@ navigation
     position: absolute;
 }
 
-.active {
+header .active {
     background-color: $green;
 }
 
@@ -224,10 +224,6 @@ projects
 .carousel img {
     height: 450px;
     object-fit: contain;
-}
-
-.carousel-inner .active {
-    background-color: white !important;
 }
 
 .carousel-control-next-icon, .carousel-control-prev-icon {

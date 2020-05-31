@@ -14,9 +14,9 @@ class Header extends Component {
                         iris.
                     </h1>
                 </div>
-                <NavLink exact={true} to="/irishu/" activeClassName="active">about me</NavLink>
-                <NavLink to="/irishu/experience" activeClassName="active">experience</NavLink>
-                <NavLink to="/irishu/projects" activeClassName="active">projects</NavLink>
+                <NavLink exact={true} to={process.env.PUBLIC_URL + '/'} activeClassName="active">about me</NavLink>
+                <NavLink to={process.env.PUBLIC_URL + '/experience'} activeClassName="active">experience</NavLink>
+                <NavLink to={process.env.PUBLIC_URL + '/projects'} activeClassName="active">projects</NavLink>
             </nav>
         </header>
     );

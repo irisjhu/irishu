@@ -20,9 +20,9 @@ class App extends Component {
                 <div className="App">
                     <Header />
                     <div className="main">
-                        <Route exact path='/irishu/' component={AboutMe} />
-                        <Route exact path='/irishu/experience' component={Experience} />
-                        <Route exact path='/irishu/projects' component={Projects} />
+                        <Route exact path={process.env.PUBLIC_URL + '/'} component={AboutMe} />
+                        <Route exact path={process.env.PUBLIC_URL + '/experience'} component={Experience} />
+                        <Route exact path={process.env.PUBLIC_URL + '/projects'} component={Projects} />
                     </div>
                 </div>
             </Router>
