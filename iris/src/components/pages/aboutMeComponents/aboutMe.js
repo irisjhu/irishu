@@ -5,6 +5,8 @@ import Info from './info';
 import About from './about';
 import Contact from './contact';
 
+import aboutme from '../../../assets/files/aboutme.json';
+
 class AboutMe extends Component {
     render() {
         return (
@@ -16,7 +18,7 @@ class AboutMe extends Component {
 
                     <div className="right">
                         <div className="aboutcontact">
-                            <About />
+                            <About aboutme={aboutme}/>
 
                             <Contact />
                         </div>
