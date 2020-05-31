@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "6a3f8aed83e51ea654168f84aa35c215",
+    "revision": "9044bea0ed9ff6f868e08c8a713bf1a0",
     "url": "/irishu/index.html"
   },
   {
-    "revision": "6d0844b0168f16407445",
+    "revision": "3c1e4478c4cbd78c5b7c",
     "url": "/irishu/static/css/2.af3c1da9.chunk.css"
   },
   {
-    "revision": "e6c1e555a8fd38b836c8",
-    "url": "/irishu/static/css/main.d36fa593.chunk.css"
+    "revision": "3028bb84b8764a9f29bf",
+    "url": "/irishu/static/css/main.8a93c33c.chunk.css"
   },
   {
-    "revision": "6d0844b0168f16407445",
-    "url": "/irishu/static/js/2.52ab3e4b.chunk.js"
+    "revision": "3c1e4478c4cbd78c5b7c",
+    "url": "/irishu/static/js/2.964f8563.chunk.js"
   },
   {
     "revision": "3453b8997016469371284a28c0e873e2",
-    "url": "/irishu/static/js/2.52ab3e4b.chunk.js.LICENSE.txt"
+    "url": "/irishu/static/js/2.964f8563.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "e6c1e555a8fd38b836c8",
-    "url": "/irishu/static/js/main.ee88cee2.chunk.js"
+    "revision": "3028bb84b8764a9f29bf",
+    "url": "/irishu/static/js/main.03c61baf.chunk.js"
   },
   {
     "revision": "420f623c0557c319f0a7",
@@ -30,10 +30,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "5112d7535d8b8e2148fb93bae1a1e32b",
     "url": "/irishu/static/media/contactme-r.5112d753.gif"
-  },
-  {
-    "revision": "13f3265e49093c95e8aaabb6f29e078c",
-    "url": "/irishu/static/media/dbxgif.13f3265e.gif"
   },
   {
     "revision": "62f30e3d907dde0ad3d20c92c3e9e088",
