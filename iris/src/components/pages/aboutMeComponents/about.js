@@ -5,7 +5,7 @@ class About extends Component {
         return (
             <div className="about">
                 <h1 className="nameTitle">
-                    iris hu.
+                    about me.
                 </h1>
 
                 {this.props.aboutme.data.map(para => (

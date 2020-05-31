@@ -89,11 +89,19 @@ about me
 
 .info {
     text-align: center;
-    font-size: 25px;
+    font-size: 23px;
+
+    p {
+        margin: 5px 0 0 0;
+    }
 }
 
 .college {
-    font-weight: 800;
+    font-style: italic;
+}
+
+.infolabel {
+    font-weight: 600;
 }
 
 .contact {

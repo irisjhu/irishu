@@ -7,6 +7,10 @@ class Info extends Component {
             <div className="info">
                 <img src={headshot} className="headshot" alt="iris headshot"></img>
 
+                <p>
+                    <b>Iris Hu</b>
+                </p>
+
                 <p className="college">
                     university of maryland, college park
                 </p>
@@ -14,10 +18,10 @@ class Info extends Component {
                     spring 2021
                 </p>
                 <p>
-                    <b>major:</b> computer science
+                    <span className="infolabel">major:</span> computer science
                 </p>
                 <p>
-                    <b>minors:</b> linguistics, general business
+                    <span className="infolabel">minors:</span> linguistics, general business
                 </p>
             </div>
         );
