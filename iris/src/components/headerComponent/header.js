@@ -6,15 +6,18 @@ class Header extends Component {
     componentDidMount() {
         // Look for .hamburger
         var hamburger = document.querySelector(".hamburger");
+        
+        hamburger.addEventListener("click", this.toggleMenuOpen);
+    }
+
+    toggleMenuOpen() {
+        var hamburger = document.querySelector(".hamburger");
         var nav = document.querySelector(".nav");
         var body = document.querySelector("body");
-        // On click
-        hamburger.addEventListener("click", function () {
-            // Toggle class "is-active"
-            hamburger.classList.toggle("is-active");
-            nav.classList.toggle("open");
-            body.classList.toggle("noScroll");
-        });
+
+        hamburger.classList.toggle("is-active");
+        nav.classList.toggle("open");
+        body.classList.toggle("noScroll");
     }
 
     render() {
@@ -31,9 +34,28 @@ class Header extends Component {
                             hi! i'm <span className="iris">iris.</span>
                         </div>
                         <div className="menu">
-                            <NavLink exact={true} to={process.env.PUBLIC_URL + '/'} activeClassName="active">about me</NavLink>
-                            <NavLink to={process.env.PUBLIC_URL + '/experience'} activeClassName="active">experience</NavLink>
-                            <NavLink to={process.env.PUBLIC_URL + '/projects'} activeClassName="active">projects</NavLink>
+                            <NavLink 
+                                exact={true} 
+                                to={process.env.PUBLIC_URL + '/'} 
+                                activeClassName="active"
+                                onClick={this.toggleMenuOpen}
+                            >
+                                    about me
+                            </NavLink>
+                            <NavLink 
+                                to={process.env.PUBLIC_URL + '/experience'} 
+                                activeClassName="active"
+                                onClick={this.toggleMenuOpen}
+                            >
+                                experience
+                            </NavLink>
+                            <NavLink 
+                                to={process.env.PUBLIC_URL + '/projects'} 
+                                activeClassName="active"
+                                onClick={this.toggleMenuOpen}
+                            >
+                                projects
+                            </NavLink>
                         </div>
                     </div>
                 </nav>
