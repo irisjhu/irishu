@@ -1,7 +1,11 @@
 import React, { Component } from 'react';
 import linkedin from '../../../assets/files/linkedin.png';
 import github from '../../../assets/files/github.png';
-import contactmegif from '../../../assets/files/contactme-r.gif';
+import contactmegif from '../../../assets/files/contactme-c.gif';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
+import { faAngleDoubleRight } from '@fortawesome/free-solid-svg-icons';
 
 class Contact extends Component {
     render() {
@@ -9,20 +13,22 @@ class Contact extends Component {
             <div className="contact">
                 <div className="split">
                     <div className="left">
-                    <img src={contactmegif} alt='contact me decorative gif'></img>
+                        <img src={contactmegif} alt='contact me decorative gif'></img>
+                        <FontAwesomeIcon icon={faAngleDoubleRight} size="3x" />
                     </div>
 
                     <div className="right">
-                        
-                        <a href="mailto:ihu009@gmail.com">ihu009@gmail.com</a><br></br>
-                        <div className="links">
+                        <span className="links">
                             <a href="https://www.linkedin.com/in/iris-j-hu/" target="_blank" rel="noopener noreferrer">
-                                <img src={linkedin} alt='linkedin logo'></img>
+                                <FontAwesomeIcon icon={faLinkedin} size="3x" />
                             </a>
                             <a href="https://github.com/irishu37" target="_blank" rel="noopener noreferrer">
-                                <img src={github} alt='github logo'></img>
+                                <FontAwesomeIcon icon={faGithub} size="3x" />
                             </a>
-                        </div>
+                            <a href="mailto:ihu009@gmail.com">
+                                <FontAwesomeIcon icon={faEnvelope} size="3x" />
+                            </a>
+                        </span>
                     </div>
                 </div>
             </div>

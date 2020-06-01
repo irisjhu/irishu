@@ -89,6 +89,16 @@ smaller screens
             font-size: 20px;
         }
     }
+
+    .contact {
+        svg {
+            max-width: 30px;
+        } 
+
+        .links svg {
+            max-width: 35px;
+        }
+    }
 }
 
 @media screen and (max-width: 700px) {
@@ -156,6 +166,7 @@ smaller screens
 
         .left {
             padding-left: 0;
+            padding-right: 5px;
         }
 
         .contact .right {
@@ -164,6 +175,10 @@ smaller screens
 
         .pageTitle {
             font-size: 30px;
+        }
+
+        .headshot {
+            max-width: 90%;
         }
     }
 
@@ -273,6 +288,36 @@ smaller screens
         .card-img-top {
             max-height: 130px;
             max-width: 190px;
+        }
+    }
+
+    .contact {
+        svg {
+            max-width: 30px;
+        }
+
+        .links a {
+            margin: 10px;
+
+            svg {
+                max-width: 35px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 475px) {
+    .contact {
+        svg {
+            max-width: 20px;
+        }
+
+        .links a {
+            margin: 3px;
+
+            svg {
+                max-width: 25px;
+            }
         }
     }
 }
