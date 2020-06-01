@@ -1,7 +1,8 @@
-import React, { Component } from 'react';
+import React, { Component, useEffect } from 'react';
 import {
     BrowserRouter as Router,
-    Route
+    Route,
+    useLocation
 } from 'react-router-dom';
 
 // components
@@ -14,10 +15,21 @@ import Footer from './components/footerComponent/footer';
 // includes
 import './assets/css/default.min.css';
 
+function ScrollToTop() {
+    const { pathname } = useLocation();
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [pathname]);
+
+    return null;
+}
+
 class App extends Component {
     render() {
         return (
             <Router>
+                <ScrollToTop />
                 <div className="App">
                     <Header />
                     <div className="flex-wrapper">
