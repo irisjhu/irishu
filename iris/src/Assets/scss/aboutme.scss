@@ -70,12 +70,14 @@ about me
     img {
         max-width: 70%;
         padding-left: 10%;
+        // align-self: start;
     }
 
     .left {
         display: flex;
         flex-direction: row;
         justify-content: center;
+        align-items: center;
 
         svg {
             color: $darkgreen;

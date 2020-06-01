@@ -125,6 +125,7 @@ smaller screens
         border-bottom-color: $gray;
         border-bottom-width: 1px;
         background-color: white;
+        overflow-y: hidden;
         z-index: 8;
 
         .heading {
