@@ -260,6 +260,21 @@ smaller screens
     #contained-modal-title-vcenter {
         font-size: 23px;
     }
+
+    .details {
+        font-size: 16px;
+    }
+
+    // larger card images for projects
+    #projects {
+        .card {
+            height: 240px;
+        }
+        .card-img-top {
+            max-height: 130px;
+            max-width: 190px;
+        }
+    }
 }
 
 @media screen and (max-width: 425px) {

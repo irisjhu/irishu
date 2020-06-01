@@ -11,7 +11,7 @@ class Projects extends Component {
         var data = projectList.data;
 
         return (
-            <div className="othermain">
+            <div className="othermain" id="projects">
                 <h1 className="pageTitle">
                     projects.
                 </h1>
