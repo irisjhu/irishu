@@ -4,12 +4,6 @@
 @import "experience.scss";
 @import "projects.scss";
 
-* {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
-
 .main {
     margin: 50px 0px 0 220px;
     padding: 0 20px;
@@ -121,6 +115,7 @@ smaller screens
         border-bottom-color: $gray;
         border-bottom-width: 1px;
         background-color: white;
+        z-index: 8;
 
         .heading {
             font-size: 20px;
@@ -181,7 +176,7 @@ smaller screens
         flex-direction: column;
         justify-content: center;
         background: $lightgreen;
-        height: 100%;
+        height: 100vh;
         width: 100%;
         text-align: left;
         padding: 2rem 3rem;
@@ -190,7 +185,6 @@ smaller screens
         left: 0;
         transition: transform 0.2s ease-in-out;
         transform: translateX(-100%);
-        z-index: 7;
 
         a {
             padding: 2rem 0;
@@ -199,11 +193,17 @@ smaller screens
             text-decoration: none;
             text-align: center;
             transition: color 0.3s linear;
-            z-index: 9;
         }
     }
 
-    .nav.open {
+    .sidenav {
+        transition: height 0.3s ease-in-out;
+    }
+
+    .sidenav.open {
+        height: 100%;
+        border-bottom-style: none;
+
         .hamburger {
             position: absolute;
             left: 0;
@@ -255,6 +255,10 @@ smaller screens
             width: 55px;
             height: 24px;
         }
+    }
+
+    #contained-modal-title-vcenter {
+        font-size: 23px;
     }
 }
 

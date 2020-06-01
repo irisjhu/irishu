@@ -25,7 +25,6 @@ experience
     display: block;
     top: 0px;
     position: relative;
-    // background-color: #f2f8f9;
     background-color: $lightgreen;
     border-radius: 4px;
     padding: 8px 6px;
@@ -33,7 +32,6 @@ experience
     z-index: 0;
     overflow: hidden;
     border: 1px solid #f2f8f9;
-    // border: 1px solid $darkgreen;
     transition: all 0.3s ease-out;
 
     &:hover {
@@ -67,9 +65,7 @@ experience
     overflow: hidden;
     top: 0;
     right: 0;
-    // background-color: #00838d;
     background-color: $darkgreen;
-    // background-color: #00ffdd;
     font-size: 15px;
     color: white;
     border-radius: 0 4px 0 4px;

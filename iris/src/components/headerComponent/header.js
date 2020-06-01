@@ -12,11 +12,11 @@ class Header extends Component {
 
     toggleMenuOpen() {
         var hamburger = document.querySelector(".hamburger");
-        var nav = document.querySelector(".nav");
+        var sidenav = document.querySelector(".sidenav");
         var body = document.querySelector("body");
 
         hamburger.classList.toggle("is-active");
-        nav.classList.toggle("open");
+        sidenav.classList.toggle("open");
         body.classList.toggle("noScroll");
     }
 
