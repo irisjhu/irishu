@@ -56,7 +56,7 @@ class Header extends Component {
                             >
                                 projects
                             </NavLink>
-                            <a href={process.env.PUBLIC_URL + '/files/resume.pdf'}>
+                            <a href={process.env.PUBLIC_URL + '/files/resume.pdf'} target="_blank" rel="noopener noreferrer">
                                 resume
                             </a>
                         </div>
