@@ -8,14 +8,16 @@
     margin: 50px 0px 0 220px;
     padding: 0 20px;
     position: relative;
+    // viewport height - footer height - top margin (to keep footer at bottom)
+    min-height: calc(100vh - 55px - 50px);
 }
 
-.flex-wrapper {
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
-    justify-content: space-between;
-}
+// .flex-wrapper {
+//     display: flex;
+//     min-height: 100vh;
+//     flex-direction: column;
+//     justify-content: space-between;
+// }
 
 footer {
     height: 20px;
@@ -24,6 +26,40 @@ footer {
     font-size: 14px;
     margin-top: 15px;
     margin-bottom: 10px;
+}
+
+/*
+page transition effects
+*/
+
+.fade-appear,
+.fade-enter {
+    opacity: 0;
+}
+
+.fade-appear-active, .fade-enter.fade-enter-active {
+    opacity: 1;
+    transition: opacity 300ms ease-in;
+}
+
+.fade-exit {
+    opacity: 1;
+}
+
+.fade-exit.fade-exit-active {
+    opacity: 0;
+    transition: opacity 300ms ease-in;
+}
+
+div.transition-group {
+    position: relative;
+}
+
+section.route-section {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
 }
 
 /*
@@ -93,7 +129,7 @@ smaller screens
     .contact {
         svg {
             max-width: 30px;
-        } 
+        }
 
         .links svg {
             max-width: 35px;
@@ -164,6 +200,8 @@ smaller screens
         margin-left: 0;
         margin-top: 80px;
         padding: 0 5px;
+        // viewport height - footer height - top margin (to keep footer at bottom)
+        min-height: calc(100vh - 55px - 80px);
 
         .left {
             padding-left: 0;
@@ -312,7 +350,7 @@ smaller screens
         img {
             padding-left: 0;
         }
-        
+
         svg {
             max-width: 20px;
         }
