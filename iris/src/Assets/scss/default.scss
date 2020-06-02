@@ -111,7 +111,7 @@ smaller screens
     }
 
     .info {
-        font-size: 12px;
+        font-size: 14px;
     }
 
     .sidenav {
@@ -309,6 +309,10 @@ smaller screens
 
 @media screen and (max-width: 475px) {
     .contact {
+        img {
+            padding-left: 0;
+        }
+        
         svg {
             max-width: 20px;
         }
@@ -320,6 +324,10 @@ smaller screens
                 max-width: 25px;
             }
         }
+    }
+
+    .info {
+        font-size: 12px;
     }
 }
 

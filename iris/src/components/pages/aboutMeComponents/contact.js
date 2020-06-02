@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-import linkedin from '../../../assets/files/linkedin.png';
-import github from '../../../assets/files/github.png';
 import contactmegif from '../../../assets/files/contactme-c.gif';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';

@@ -6,7 +6,7 @@ class Header extends Component {
     componentDidMount() {
         // Look for .hamburger
         var hamburger = document.querySelector(".hamburger");
-        
+
         hamburger.addEventListener("click", this.toggleMenuOpen);
     }
 
@@ -34,28 +34,31 @@ class Header extends Component {
                             hi! i'm <span className="iris">iris.</span>
                         </div>
                         <div className="menu">
-                            <NavLink 
-                                exact={true} 
-                                to={process.env.PUBLIC_URL + '/'} 
+                            <NavLink
+                                exact={true}
+                                to={process.env.PUBLIC_URL + '/'}
                                 activeClassName="active"
                                 onClick={this.toggleMenuOpen}
                             >
-                                    about me
+                                about me
                             </NavLink>
-                            <NavLink 
-                                to={process.env.PUBLIC_URL + '/experience'} 
+                            <NavLink
+                                to={process.env.PUBLIC_URL + '/experience'}
                                 activeClassName="active"
                                 onClick={this.toggleMenuOpen}
                             >
                                 experience
                             </NavLink>
-                            <NavLink 
-                                to={process.env.PUBLIC_URL + '/projects'} 
+                            <NavLink
+                                to={process.env.PUBLIC_URL + '/projects'}
                                 activeClassName="active"
                                 onClick={this.toggleMenuOpen}
                             >
                                 projects
                             </NavLink>
+                            <a href={process.env.PUBLIC_URL + '/files/resume.pdf'}>
+                                resume
+                            </a>
                         </div>
                     </div>
                 </nav>

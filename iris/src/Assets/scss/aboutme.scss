@@ -11,10 +11,8 @@ about me
     margin: auto auto 20px;
 }
 
-.split:after {
-    content: "";
+.split {
     display: table;
-    clear: both;
 }
 
 .left {
@@ -70,7 +68,10 @@ about me
     img {
         max-width: 70%;
         padding-left: 10%;
-        // align-self: start;
+    }
+
+    .split {
+        display: flex;
     }
 
     .left {
@@ -89,5 +90,6 @@ about me
         display: flex;
         flex-direction: row;
         justify-content: center;
+        align-items: center;
     }
 }
