@@ -46,12 +46,15 @@
     ]
   },
   "devDependencies": {
+    "autoprefixer": "^9.8.0",
     "gh-pages": "^2.2.0",
     "gulp": "^4.0.2",
     "gulp-changed": "^4.0.2",
     "gulp-clean-css": "^4.3.0",
+    "gulp-postcss": "^8.0.0",
     "gulp-rename": "^2.0.0",
     "gulp-sass": "^4.1.0",
+    "gulp-sourcemaps": "^2.6.5",
     "gulp-uglify": "^3.0.2"
   }
 }

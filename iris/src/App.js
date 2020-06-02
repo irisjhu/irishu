@@ -9,7 +9,7 @@ import Header from './components/headerComponent/header';
 import Container from './components/pages/common/container';
 
 // includes
-import './assets/css/default.min.css';
+import './assets/css/post/default.min.css';
 
 function ScrollToTop() {
     const { pathname } = useLocation();
