@@ -15,3 +15,10 @@
 
 # Node.js dependencies:
 node_modules/
+
+# project files besides build
+gulpfile.js
+package*
+public/
+src/
+README.md

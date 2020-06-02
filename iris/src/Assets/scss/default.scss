@@ -286,10 +286,10 @@ smaller screens
 
     .main {
         margin-left: 0;
-        margin-top: 80px;
+        margin-top: 60px;
         padding: 0 5px;
         // viewport height - footer height - top margin (to keep footer at bottom)
-        min-height: calc(100vh - 55px - 80px);
+        min-height: calc(100vh - 55px - 60px);
 
         .left {
             padding-left: 0;
