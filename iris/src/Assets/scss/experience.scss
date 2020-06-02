@@ -13,64 +13,6 @@ experience
     }
 }
 
-.cards {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.card {
-    width: 300px;
-    height: 300px;
-    margin: 0 20px 20px 0;
-    display: block;
-    top: 0px;
-    position: relative;
-    background-color: $lightgreen;
-    border-radius: 4px;
-    padding: 8px 6px;
-    text-decoration: none;
-    z-index: 0;
-    overflow: hidden;
-    border: 1px solid #f2f8f9;
-    transition: all 0.3s ease-out;
-
-    &:hover {
-        transition: all 0.2s ease-out;
-        box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
-        top: -4px;
-        border: 1px solid #cccccc;
-        background-color: white;
-    }
-
-    &:hover:before {
-        transform: scale(2.15);
-    }
-}
-
-.card-img-top {
-    max-height: 150px;
-    width: auto;
-    max-width: 280px;
-    display: block;
-    margin: 10px auto;
-}
-
-.corner {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    width: 68px;
-    height: 32px;
-    overflow: hidden;
-    top: 0;
-    right: 0;
-    background-color: $darkgreen;
-    font-size: 15px;
-    color: white;
-    border-radius: 0 4px 0 4px;
-  }
-
 .smallLogo {
     height: 30px;
     margin: 0 10px;

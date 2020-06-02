@@ -50,7 +50,7 @@ class ExpCard extends Component {
         var data = this.props.data;
 
         return (
-            <div className="cardComponents">
+            <>
                 <a className="card" href="javascript:void(0)" onClick={this.props.onClick}>
                     <img className="card-img-top" src={process.env.PUBLIC_URL + data.logo} alt="company logo" />
                     <div className="card-body">
@@ -68,7 +68,7 @@ class ExpCard extends Component {
                     show={this.props.show}
                     onHide={this.props.onHide}>
                 </Popup>
-            </div>
+            </>
         );
     }
 }

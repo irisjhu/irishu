@@ -72,7 +72,7 @@ class ProjCard extends Component {
         }
 
         return (
-            <div className="cardComponents">
+            <>
                 <a className="card" href="javascript:void(0)" onClick={this.props.onClick}>
                     <img className="card-img-top" src={imagesF[0]} alt="project pic" />
                     <div className="card-body">
@@ -90,7 +90,7 @@ class ProjCard extends Component {
                     show={this.props.show}
                     onHide={this.props.onHide}>
                 </Popup>
-            </div>
+            </>
         );
     }
 }

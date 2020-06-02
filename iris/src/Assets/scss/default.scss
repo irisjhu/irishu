@@ -28,6 +28,64 @@ footer {
     margin-bottom: 10px;
 }
 
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 300px;
+    height: 300px;
+    margin: 0 20px 20px 0;
+    display: block;
+    top: 0px;
+    position: relative;
+    background-color: $lightgreen;
+    border-radius: 4px;
+    padding: 8px 6px;
+    text-decoration: none;
+    z-index: 0;
+    overflow: hidden;
+    border: 1px solid #f2f8f9;
+    transition: all 0.3s ease-out;
+
+    &:hover {
+        transition: all 0.2s ease-out;
+        box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
+        top: -4px;
+        border: 1px solid #cccccc;
+        background-color: white;
+    }
+
+    &:hover:before {
+        transform: scale(2.15);
+    }
+}
+
+.card-img-top {
+    max-height: 150px;
+    width: auto;
+    max-width: 280px;
+    display: block;
+    margin: 10px auto;
+}
+
+.corner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 68px;
+    height: 32px;
+    overflow: hidden;
+    top: 0;
+    right: 0;
+    background-color: $darkgreen;
+    font-size: 15px;
+    color: white;
+    border-radius: 0 4px 0 4px;
+}
+
 /*
 page transition effects
 */
@@ -37,7 +95,8 @@ page transition effects
     opacity: 0;
 }
 
-.fade-appear-active, .fade-enter.fade-enter-active {
+.fade-appear-active,
+.fade-enter.fade-enter-active {
     opacity: 1;
     transition: opacity 300ms ease-in;
 }
@@ -60,6 +119,38 @@ section.route-section {
     width: 100%;
     top: 0;
     left: 0;
+}
+
+/*
+card animation effects
+*/
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+        transform: scale(0);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.card {
+    // duration | timing-function | fill-mode | name
+    animation: 0.5s ease-in-out both fade-in;
+}
+
+// the 12 here is hard-coded; increase if more cards
+@for $i from 1 through 12 {
+    .card {
+        // :nth-child(1-12)
+        &:nth-child(#{$i}) {
+            // Delay the animation. Delay increases as items loop.
+            animation-delay: $i * (0.06s);
+        }
+    }
 }
 
 /*
@@ -237,7 +328,7 @@ smaller screens
         position: fixed;
         top: 0;
         left: 0;
-        transition: transform 0.2s ease-in-out;
+        transition: transform 0.4s ease-in-out;
         transform: translateX(-100%);
 
         a {
@@ -246,12 +337,11 @@ smaller screens
             font-weight: bold;
             text-decoration: none;
             text-align: center;
-            transition: color 0.3s linear;
         }
     }
 
     .sidenav {
-        transition: height 0.3s ease-in-out;
+        transition: height 0.4s ease-in-out;
     }
 
     .sidenav.open {
