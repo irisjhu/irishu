@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Route, Switch, withRouter } from 'react-router-dom';
-import { TransitionGroup, CSSTransition, SwitchTransition } from "react-transition-group";
+import { TransitionGroup, CSSTransition } from "react-transition-group";
 
 // components
 import AboutMe from '../aboutMeComponents/aboutMe';

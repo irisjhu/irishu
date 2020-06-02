@@ -28,6 +28,7 @@ function ProjImgCarousel(props) {
                     <img
                         className="d-block w-100"
                         src={img}
+                        alt="carousel slide"
                     />
                 </Carousel.Item>
             ))}
