@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 import { faAngleDoubleRight } from '@fortawesome/free-solid-svg-icons';
+import ReactGA from 'react-ga';
 
 class Contact extends Component {
     render() {
@@ -17,15 +18,26 @@ class Contact extends Component {
 
                     <div className="right">
                         <span className="links">
-                            <a href="https://www.linkedin.com/in/iris-j-hu/" target="_blank" rel="noopener noreferrer">
+                            <ReactGA.OutboundLink
+                                eventLabel="linkedin"
+                                to="https://www.linkedin.com/in/iris-j-hu/"
+                                target="_blank"
+                            >
                                 <FontAwesomeIcon icon={faLinkedin} size="3x" />
-                            </a>
-                            <a href="https://github.com/irishu37" target="_blank" rel="noopener noreferrer">
+                            </ReactGA.OutboundLink>
+                            <ReactGA.OutboundLink
+                                eventLabel="github"
+                                to="https://github.com/irishu37"
+                                target="_blank"
+                            >
                                 <FontAwesomeIcon icon={faGithub} size="3x" />
-                            </a>
-                            <a href="mailto:ihu009@gmail.com">
+                            </ReactGA.OutboundLink>
+                            <ReactGA.OutboundLink
+                                eventLabel="email"
+                                to="mailto:ihu009@gmail.com"
+                            >
                                 <FontAwesomeIcon icon={faEnvelope} size="3x" />
-                            </a>
+                            </ReactGA.OutboundLink>
                         </span>
                     </div>
                 </div>

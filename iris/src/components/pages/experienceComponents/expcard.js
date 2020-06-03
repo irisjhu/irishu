@@ -46,12 +46,17 @@ function ExpModalBody(props) {
 }
 
 class ExpCard extends Component {
+    cardClickGA() {
+        this.props.onClick();
+        this.props.sendModalGA(this.props.data.company);
+    }
+
     render() {
         var data = this.props.data;
 
         return (
             <>
-                <a className="card" href="javascript:void(0)" onClick={this.props.onClick}>
+                <a className="card" href="javascript:void(0)" onClick={this.cardClickGA.bind(this)}>
                     <img className="card-img-top" src={process.env.PUBLIC_URL + data.logo} alt="company logo" />
                     <div className="card-body">
                         <h4 className="card-title">{data.company}</h4>

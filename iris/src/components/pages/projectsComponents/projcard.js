@@ -62,6 +62,11 @@ function ProjModalBody(props) {
 }
 
 class ProjCard extends Component {
+    cardClickGA() {
+        this.props.onClick();
+        this.props.sendModalGA(this.props.data.title);
+    }
+
     render() {
         var data = this.props.data;
 
@@ -74,7 +79,7 @@ class ProjCard extends Component {
 
         return (
             <>
-                <a className="card" href="javascript:void(0)" onClick={this.props.onClick}>
+                <a className="card" href="javascript:void(0)" onClick={this.cardClickGA.bind(this)}>
                     <img className="card-img-top" src={imagesF[0]} alt="project pic" />
                     <div className="card-body">
                         <h4 className="card-title">{data.title}</h4>
@@ -87,7 +92,7 @@ class ProjCard extends Component {
 
                 <Popup
                     modaltitle={ProjModalTitle(data)}
-                    modalbody={ProjModalBody({...data, imagesF: imagesF})}
+                    modalbody={ProjModalBody({ ...data, imagesF: imagesF })}
                     show={this.props.show}
                     onHide={this.props.onHide}>
                 </Popup>

@@ -1,6 +1,18 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
+import ReactGA from 'react-ga';
+
 import 'hamburgers/dist/hamburgers.css';
+
+function Hamburger() {
+    return (
+        <button class="hamburger hamburger--spin" type="button">
+            <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+            </span>
+        </button>
+    );
+}
 
 class Header extends Component {
     componentDidMount() {
@@ -20,16 +32,19 @@ class Header extends Component {
         body.classList.toggle("noScroll");
     }
 
+    sendGA() {
+        ReactGA.event({
+            category: "File",
+            action: "Resume clicked"
+        });
+    }
+
     render() {
         return (
             <header>
                 <nav className="sidenav">
                     <div className="nav">
-                        <button class="hamburger hamburger--spin" type="button">
-                            <span class="hamburger-box">
-                                <span class="hamburger-inner"></span>
-                            </span>
-                        </button>
+                        <Hamburger />
                         <div className="heading">
                             hi! i'm <span className="iris">iris.</span>
                         </div>
@@ -56,7 +71,12 @@ class Header extends Component {
                             >
                                 projects
                             </NavLink>
-                            <a href={process.env.PUBLIC_URL + '/files/resume.pdf'} target="_blank" rel="noopener noreferrer">
+                            <a
+                                href={process.env.PUBLIC_URL + '/files/resume.pdf'}
+                                onClick={this.sendGA}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
                                 resume
                             </a>
                         </div>

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import ReactGA from 'react-ga';
 
 // components
 import ExpCard from '../experienceComponents/expcard';
@@ -22,14 +23,31 @@ class Card extends Component {
         };
     }
 
+    sendModalGA(label) {
+        ReactGA.event({
+            category: "Modal",
+            action: "clicked modal",
+            label: label
+        });
+    }
+
+    showModal() {
+        this.setState({ modalShow: true });
+    }
+
+    hideModal() {
+        this.setState({ modalShow: false });
+    }
+
     render() {
         if (this.props.cardType === EXP) {
             return (
                 <ExpCard
                     data={this.props.data}
                     show={this.state.modalShow}
-                    onHide={() => this.setState({ modalShow: false })}
-                    onClick={() => this.setState({ modalShow: true })}
+                    onHide={this.hideModal.bind(this)}
+                    onClick={this.showModal.bind(this)}
+                    sendModalGA={this.sendModalGA}
                 />
             );
         } else if (this.props.cardType === PROJ) {
@@ -37,8 +55,9 @@ class Card extends Component {
                 <ProjCard 
                     data={this.props.data} 
                     show={this.state.modalShow}
-                    onHide={() => this.setState({ modalShow: false })}
-                    onClick={() => this.setState({ modalShow: true })}
+                    onHide={this.hideModal.bind(this)}
+                    onClick={this.showModal.bind(this)}
+                    sendModalGA={this.sendModalGA}
                 />
             );
         }
