@@ -12,7 +12,7 @@ class Experience extends Component {
 
         return (
             <div className="othermain" id="experience">
-                <h1 className="pageTitle">
+                <h1 className="page-title">
                     experience.
                 </h1>
 

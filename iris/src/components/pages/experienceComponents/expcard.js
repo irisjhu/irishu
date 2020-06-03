@@ -13,7 +13,7 @@ data: JSON
 function ExpModalTitle(props) {
     return (
         <div>
-            <img src={process.env.PUBLIC_URL + props.logo} alt="company logo small" className="smallLogo" />
+            <img src={process.env.PUBLIC_URL + props.logo} alt="company logo small" className="small-logo" />
             {props.company}
         </div>
     );
@@ -21,9 +21,9 @@ function ExpModalTitle(props) {
 
 function ExpModalBody(props) {
     return (
-        <div className="experienceDet">
+        <div className="experience-det">
             <h5 className="mb-2 text-muted">{props.title}</h5>
-            <div className="upperDetails">
+            <div className="upper-details">
                 <p>
                     <b>when:</b> {props.start} - {props.end}
                 </p>

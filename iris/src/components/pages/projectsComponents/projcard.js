@@ -38,10 +38,10 @@ function ProjImgCarousel(props) {
 
 function ProjModalBody(props) {
     return (
-        <div className="projBody">
+        <div className="proj-body">
             {ProjImgCarousel({ images: props.imagesF })}
 
-            <div className="upperDetails">
+            <div className="upper-details">
                 <p>
                     <b>when:</b> {props.where}, {props.year}
                 </p>

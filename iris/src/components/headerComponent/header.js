@@ -29,7 +29,7 @@ class Header extends Component {
 
         hamburger.classList.toggle("is-active");
         sidenav.classList.toggle("open");
-        body.classList.toggle("noScroll");
+        body.classList.toggle("no-scroll");
     }
 
     sendGA() {
