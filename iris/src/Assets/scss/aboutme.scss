@@ -53,10 +53,15 @@ about me
 
         a {
             margin: 10px;
-            color: $black;
+
+            @include themed() {
+                color: t($text-emphasis);
+            }
 
             &:hover {
-                color: $hoverblack;
+                @include themed() {
+                    color: t($hover);
+                }
             }
         }
     }
@@ -81,8 +86,12 @@ about me
         align-items: center;
 
         svg {
-            color: $darkgreen;
+            // color: $darkgreen;
             margin-left: 5%;
+
+            @include themed() {
+                color: t($text);
+            }
         }
     }
 

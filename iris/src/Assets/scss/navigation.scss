@@ -33,13 +33,18 @@ navigation
         padding: 0 5px;
         text-decoration: none;
         font-size: 25px;
-        color: $black;
         display: block;
         @include transition(0.2s ease-in-out);
 
+        @include themed() {
+            color: t($text-emphasis);
+        }
+
         &:hover {
-            color: $hoverblack;
             @include transition(0.2s ease-in-out);
+            @include themed() {
+                color: t($text);
+            }
         }
     }
 
@@ -49,5 +54,8 @@ navigation
 }
 
 header .active {
-    background-color: $green;
+    @include themed() {
+        background-color: t($active);
+        color: t($text-secondary);
+    }
 }

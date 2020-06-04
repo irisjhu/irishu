@@ -24,7 +24,11 @@ class Container extends Component {
                         <section className="route-section">
                             <div className="main">
                                 <Switch location={this.props.location}>
-                                    <Route exact path={process.env.PUBLIC_URL + '/'} component={AboutMe} />
+                                    <Route 
+                                        exact 
+                                        path={process.env.PUBLIC_URL + '/'} 
+                                        component={() => <AboutMe theme={this.props.theme}/>} 
+                                    />
                                     <Route exact path={process.env.PUBLIC_URL + '/experience'} component={Experience} />
                                     <Route exact path={process.env.PUBLIC_URL + '/projects'} component={Projects} />
                                 </Switch>

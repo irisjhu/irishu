@@ -31,17 +31,33 @@ function ScrollToTop() {
 }
 
 class App extends Component {
+    constructor(props) {
+        super(props);
+
+        this.state = {
+            dark: true
+        };
+
+        this.changeTheme = this.changeTheme.bind(this);
+    }
+
+    changeTheme() {
+        this.setState({ dark: !this.state.dark });
+    }
+
     render() {
         return (
-            <Router history={history}>
-                <Analytics id={GATrackingID}>
-                    <div className="App">
-                        <ScrollToTop />
-                        <Header />
-                        <Container />
-                    </div>
-                </Analytics>
-            </Router>
+            <div id="wrapper" className={'theme ' + (this.state.dark ? 'theme--dark' : 'theme--default')}>
+                <Router history={history}>
+                    <Analytics id={GATrackingID}>
+                        <div className="App">
+                            <ScrollToTop />
+                            <Header />
+                            <Container theme={this.state.dark}/>
+                        </div>
+                    </Analytics>
+                </Router>
+            </div>
         );
     }
 }

@@ -20,7 +20,7 @@ class AboutMe extends Component {
                         <div className="aboutcontact">
                             <About aboutme={aboutme}/>
 
-                            <Contact />
+                            <Contact theme={this.props.theme} />
                         </div>
                     </div>
                 </div>

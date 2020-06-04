@@ -8,14 +8,101 @@ Imports
 Vars
 */
 
+$baloo: "Baloo Chettan 2", sans-serif;
+
+// light theme
 $green: #cff5f0;
-// $oldgreen: #c5ffd1;
 $lightgreen: #f2f9f8;
 $darkgreen: #1cc0aa;
 $black: #363636;
 $hoverblack: #777777;
-$gray: #818181;
-$baloo: 'Baloo Chettan 2', sans-serif;
+$link-light: #007bff;
+$card-border-hover--light: #cccccc;
+$text-muted--light: #6c757d;
+$box-shadow--light: rgba(38, 38, 38, 0.2);
+
+//dark theme
+$bg--dark: #313a44;
+$card-bg--dark: #42585f;
+$text--dark: $green;
+$text-2--dark: $lightgreen;
+$text-emphasis--dark: $darkgreen;
+$hover--dark: $lightgreen;
+$box-shadow--dark: rgba(0, 0, 0, 0.4);
+
+// theme variables
+$bg: 'bg';
+$card-bg: 'card-bg';
+$card-border-hover: 'card-border-hover';
+$text: 'text';
+$text-secondary: 'text-secondary';
+$text-emphasis: 'text-emphasis';
+$text-inverted: 'text-inverted';
+$text-muted: 'text-muted';
+$active: 'active';
+$highlight: 'highlight';
+$modal: 'modal';
+$link: 'link';
+$hover: 'hover';
+$box-shadow: 'box-shadow';
+
+$themes: (
+    default: (
+        bg: white,
+        card-bg: $lightgreen,
+        card-border-hover: $card-border-hover--light,
+        text: $black,
+        text-secondary: $black,
+        text-emphasis: $black,
+        text-inverted: white,
+        text-muted: $text-muted--light,
+        active: $green,
+        highlight: $darkgreen,
+        modal: white,
+        link: $link-light,
+        hover: $hoverblack,
+        box-shadow: $box-shadow--light,
+    ),
+    dark: (
+        bg: $bg--dark,
+        card-bg: $card-bg--dark,
+        card-border-hover: $card-bg--dark,
+        text: $text--dark,
+        text-secondary: $text-2--dark,
+        text-emphasis: $text-emphasis--dark,
+        text-inverted: $text-2--dark,
+        text-muted: $text-2--dark,
+        active: $darkgreen,
+        highlight: $darkgreen,
+        modal: $card-bg--dark,
+        link: $link-light,
+        hover: $hover--dark,
+        box-shadow: $box-shadow--dark,
+    ),
+);
+
+@mixin themed() {
+    @each $theme, $map in $themes {
+        .theme--#{$theme} & {
+            $theme-map: () !global;
+            @each $key, $submap in $map {
+                $value: map-get(map-get($themes, $theme), "#{$key}");
+                $theme-map: map-merge(
+                    $theme-map,
+                    (
+                        $key: $value,
+                    )
+                ) !global;
+            }
+            @content;
+            $theme-map: null !global;
+        }
+    }
+}
+
+@function t($key) {
+    @return map-get($theme-map, $key);
+}
 
 /*
 Mixins
@@ -46,4 +133,3 @@ body {
 /*
 Style
 */
-
