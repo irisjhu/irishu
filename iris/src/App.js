@@ -35,7 +35,7 @@ class App extends Component {
         super(props);
 
         this.state = {
-            dark: true
+            dark: false
         };
 
         this.changeTheme = this.changeTheme.bind(this);
@@ -47,7 +47,7 @@ class App extends Component {
 
     render() {
         return (
-            <div id="wrapper" className={'theme ' + (this.state.dark ? 'theme--dark' : 'theme--default')}>
+            <div className={'theme ' + (this.state.dark ? 'theme--dark' : 'theme--default')}>
                 <Router history={history}>
                     <Analytics id={GATrackingID}>
                         <div className="App">
