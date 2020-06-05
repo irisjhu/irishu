@@ -31,13 +31,6 @@ section {
     min-height: calc(100vh - 45px - 50px);
 }
 
-// .flex-wrapper {
-//     display: flex;
-//     min-height: 100vh;
-//     flex-direction: column;
-//     justify-content: space-between;
-// }
-
 footer {
     height: 20px;
     text-align: center;
@@ -51,8 +44,22 @@ footer {
 }
 
 .switch-toggle {
-    margin: 15px;
+    margin: 12px;
     z-index: 10;
+
+    svg {
+        height: 100%;
+        width: 80% !important;
+        padding-left: 10%;
+
+        &.fa-sun {
+            color: orange;
+        }
+
+        &.fa-moon {
+            color: $bg--dark;
+        }
+    }
 }
 
 // need to set modal dark mode colors separately bc it opens outside of the themed div in DOM
