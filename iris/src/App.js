@@ -43,6 +43,9 @@ class App extends Component {
 
     changeTheme() {
         this.setState({ dark: !this.state.dark });
+
+        var body = document.querySelector('body');
+        body.classList.toggle('dark');
     }
 
     render() {
@@ -52,7 +55,7 @@ class App extends Component {
                     <Analytics id={GATrackingID}>
                         <div className="App">
                             <ScrollToTop />
-                            <Header />
+                            <Header changeTheme={this.changeTheme} />
                             <Container theme={this.state.dark}/>
                         </div>
                     </Analytics>

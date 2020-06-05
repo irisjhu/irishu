@@ -3,6 +3,7 @@
 @import "aboutme.scss";
 @import "experience.scss";
 @import "projects.scss";
+@import "card.scss";
 
 .App {
     @include themed() {
@@ -49,81 +50,28 @@ footer {
     }
 }
 
-.cards {
-    display: flex;
-    flex-wrap: wrap;
+.switch-toggle {
+    margin: 15px;
+    z-index: 10;
 }
 
-.card {
-    width: 300px;
-    height: 300px;
-    margin: 0 20px 20px 0;
-    display: block;
-    top: 0px;
-    position: relative;
-    border-radius: 4px;
-    padding: 8px 6px;
-    text-decoration: none;
-    z-index: 0;
-    overflow: hidden;
-    transition: all 0.3s ease-out;
-
-    @include themed() {
-        background-color: t($card-bg);
-        border: 1px solid t($card-bg);
+// need to set modal dark mode colors separately bc it opens outside of the themed div in DOM
+body.dark {
+    .modal-header {
+        border-bottom: 1px solid $bg-darker--dark;
     }
 
-    &:hover {
-        transition: all 0.2s ease-out;
-        top: -4px;
+    .modal-content {
+        background-color: $bg--dark;
+        color: $text-2--dark;
 
-        @include themed() {
-            border: t($card-border-hover);
-            box-shadow: 0px 4px 8px t($box-shadow);
+        .text-muted {
+            color: $text--dark !important;
         }
     }
 
-    &:hover:before {
-        transform: scale(2.15);
-    }
-
-    .text-muted {
-        @include themed() {
-            color: t($text-muted) !important;
-        }
-    }
-}
-
-.card-img-top {
-    max-height: 150px;
-    width: auto;
-    max-width: 280px;
-    display: block;
-    margin: 10px auto;
-}
-
-.corner {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    width: 68px;
-    height: 32px;
-    overflow: hidden;
-    top: 0;
-    right: 0;
-    font-size: 15px;
-    border-radius: 0 4px 0 4px;
-
-    @include themed() {
-        background-color: t($highlight);
-        color: t($text-inverted);
-    }
-}
-
-.modal-content {
-    @include themed() {
-        background-color: t($bg) !important;
+    button.close {
+        color: $text-2--dark;
     }
 }
 
@@ -325,6 +273,19 @@ smaller screens
             &:focus {
                 outline: none;
             }
+
+            .hamburger-inner {
+                @include themed() {
+                    background-color: t($text);
+                }
+
+                &::before,
+                &::after {
+                    @include themed() {
+                        background-color: t($text);
+                    }
+                }
+            }
         }
     }
 
@@ -382,6 +343,12 @@ smaller screens
             text-decoration: none;
             text-align: center;
         }
+    }
+
+    .switch-toggle {
+        position: fixed;
+        top: 0;
+        right: 0;
     }
 
     .sidenav {

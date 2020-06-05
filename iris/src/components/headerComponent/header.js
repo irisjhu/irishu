@@ -2,6 +2,10 @@ import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
 import ReactGA from 'react-ga';
 
+// components
+import SwitchToggle from '../pages/common/switchToggle';
+
+// styles
 import 'hamburgers/dist/hamburgers.css';
 
 function Hamburger() {
@@ -80,6 +84,7 @@ class Header extends Component {
                                 resume
                             </a>
                         </div>
+                        <SwitchToggle changeTheme={this.props.changeTheme} />
                     </div>
                 </nav>
             </header>
