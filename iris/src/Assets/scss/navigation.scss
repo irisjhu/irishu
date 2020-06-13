@@ -43,7 +43,7 @@ navigation
         &:hover {
             @include transition(0.2s ease-in-out);
             @include themed() {
-                color: t($text);
+                color: t($hover);
             }
         }
     }
