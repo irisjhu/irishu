@@ -7,8 +7,8 @@
             "end": "aug 2020",
             "location": "san francisco, ca (remote)",
             "details": [
-                "Hierarchically reorganized file defining user permissions; reduced lines of codeby 1/3(600 lines)",
-                "Improvedand addedinternal tooling around the product’s core authorization systemto address visibility and usability shortcomings—saving manyhours of engineer time spent on understanding, testing, and debugging permissions related issues",
+                "Hierarchically reorganized file defining user permissions; reduced lines of codeby 1/3 (600 lines)",
+                "Improvedand added internal tooling around the product’s core authorization system to address visibility and usability shortcomings—saving many hours of engineer time spent on understanding, testing, and debugging permissions related issues",
                 "Reviewed bug bounty reports: reproduced the bug, determined impact, investigated root cause"
             ],
             "logo": "/img/samsara.png"
