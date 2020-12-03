@@ -16,7 +16,7 @@
             "title": "Truth Serum",
             "where": "Dropbox Intern Hack Week",
             "year": "2019",
-            "github": "https://github.com/irishu37/TruthSerum",
+            "github": "https://github.com/irisjhu/TruthSerum",
             "images": [4, "/ts/ts", ".png"],
             "description": [
                 "Fake news is sadly very prevalent in the era we live in; people even go so far as to create fake Twitter tweets from verified accounts. In order to combat this and provide a platform to keep a check on these fake news, we build a lightweight web app that is capable of distinguishing between real and fake images of Tweets.",
@@ -29,7 +29,7 @@
             "title": "Cycles for Her Future",
             "where": "Technica",
             "year": "2017",
-            "github": "https://github.com/irishu37/TechnicaGirlUpGame",
+            "github": "https://github.com/irisjhu/TechnicaGirlUpGame",
             "images": [6, "/cfhf/cfhf", ".png"],
             "description": [
                 "I worked on this project with two other friends during my freshman year at Technica (UMD's all-women and non-binary hackathon). We won the Best Education/Diversity and Inclusion Hack sponsored by Bloomberg.",
