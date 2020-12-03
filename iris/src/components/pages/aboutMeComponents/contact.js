@@ -35,7 +35,7 @@ class Contact extends Component {
                             </ReactGA.OutboundLink>
                             <ReactGA.OutboundLink
                                 eventLabel="github"
-                                to="https://github.com/irishu37"
+                                to="https://github.com/irisjhu"
                                 target="_blank"
                             >
                                 <FontAwesomeIcon icon={faGithub} size="3x" />
