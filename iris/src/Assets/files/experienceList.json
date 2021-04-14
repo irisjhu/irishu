@@ -1,6 +1,20 @@
 {
     "data": [
         {
+            "company": "University of Maryland",
+            "title": "student-initiated courses (STICs) course facilitator",
+            "start": "aug 2020",
+            "end": "present",
+            "location": "remote",
+            "details": [
+                "CMSC389O: The Coding Interview",
+                "Lead a class of 30 students with a co-facilitator",
+                "Teach concepts in data structures and algorithms to improve students' performance in coding interviews",
+                "Conduct mock interviews and grade weekly coding interview assignments"
+            ],
+            "logo": "/img/umd.png"
+        },
+        {
             "company": "Samsara",
             "title": "software engineering intern",
             "start": "jun 2020",
